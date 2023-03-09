@@ -2,7 +2,7 @@
 
 body {
   height: 100vh;
-  background: url("https://i.pinimg.com/originals/54/ba/1a/54ba1aebeb5c5c92105f430009db074c.jpg");
+  background: url("http://wallpapers.net/green-polygon-pattern-hd-wallpaper/download/3840x2160.jpg");
   background-size: cover;
   background-position: 50%;
 }
@@ -66,6 +66,11 @@ body {
   animation: Semafaro1 2s linear infinite;
 }
 
+.Seccion2 h2:hover {
+  color: #1c7c3f;
+  border-bottom: 2px #1c7c3f solid;
+}
+
 @keyframes Semafaro1 {
   45% {
     background: #317f43;
@@ -94,22 +99,26 @@ body {
 
 .Seccion1 {
   text-align: left;
-  color: #549234;
+  color: #1c7c3f;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   height: 100%;
 }
 
-.Seccion1 p {
+footer p {
   color: #696969;
+  position: absolute;
+  bottom: 10px;
+  width: 380px;
+  left: 0px;
 }
 
 .Barra {
   width: 75px;
-  height: 5px;
+  height: 2px;
   position: absolute;
-  background: #549234;
+  background: #1c7c3f;
 }
 
 .Seccion2 {
@@ -121,6 +130,7 @@ body {
 .Seccion2 h2 {
   font-size: 22px;
   color: #555555;
+  transition: all 250ms ease;
   border-bottom: #3c3c3c 1px solid;
 }
 
@@ -133,13 +143,13 @@ body {
   border-color: transparent;
   border-bottom: #555555 2px solid;
   justify-content: space-between;
-  caret-color: #549234;
-  color: #549234;
+  caret-color: #1c7c3f;
+  color: #1c7c3f;
 }
 
 .Seccion2 input:focus {
   outline: none;
-  border-bottom: #549234 2px solid;
+  border-bottom: #1c7c3f 2px solid;
 }
 
 .Seccion2 button {
@@ -162,7 +172,7 @@ body {
 img {
   position: absolute;
   bottom: 0px;
-
+  z-index: 100;
   left: 0;
   border-bottom-left-radius: 10px;
 }
