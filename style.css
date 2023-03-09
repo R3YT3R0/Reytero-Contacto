@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  height: 100vh;
+  background: url("https://i.pinimg.com/originals/54/ba/1a/54ba1aebeb5c5c92105f430009db074c.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+* {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+}
+
+.Main1 {
+  background: linear-gradient(180deg, #353232, #232323);
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  border-radius: 10px;
+  padding: 30px;
+  animation: BackgrounMovment 3s ease infinite;
+}
+
+.Lights {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+  padding: 10px;
+  border-top-left-radius: 10px;
+}
+
+.Luces {
+  width: 100%;
+  background: #3c3c3c;
+  border-top-left-radius: 10px;
+  position: absolute;
+  border-top-right-radius: 10px;
+
+  top: 0;
+  left: 0;
+}
+
+.Light {
+  width: 15px;
+  height: 15px;
+  transform: scale(1.2);
+  border-radius: 50%;
+  justify-content: center;
+  display: inline-block;
+}
+
+.Green {
+  animation: Semafaro1 2s linear infinite;
+}
+
+.Yellow {
+  animation: Semafaro1 2s linear infinite;
+}
+
+.Red {
+  animation: Semafaro1 2s linear infinite;
+}
+
+@keyframes Semafaro1 {
+  45% {
+    background: #317f43;
+    box-shadow: 0.5px 0.5px 15px #317f43;
+    scale: 0.85;
+  }
+  50% {
+    background-color: #f8f32b;
+    box-shadow: 0.5px 0.5px 15px #f8f32b;
+    scale: 1;
+  }
+  100% {
+    background: #a52019;
+    box-shadow: 0.5px 0.5px 15px #a52019;
+    scale: 1.15;
+  }
+}
+
+.contenido {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.Seccion1 {
+  text-align: left;
+  color: #549234;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Seccion1 p {
+  color: #696969;
+}
+
+.Barra {
+  width: 75px;
+  height: 5px;
+  position: absolute;
+  background: #549234;
+}
+
+.Seccion2 {
+  position: absolute;
+  right: 25px;
+  top: 50px;
+}
+
+.Seccion2 h2 {
+  font-size: 22px;
+  color: #555555;
+  border-bottom: #3c3c3c 1px solid;
+}
+
+.Seccion2 input {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 30px;
+  background: none;
+  border-color: transparent;
+  border-bottom: #555555 2px solid;
+  justify-content: space-between;
+  caret-color: #549234;
+  color: #549234;
+}
+
+.Seccion2 input:focus {
+  outline: none;
+  border-bottom: #549234 2px solid;
+}
+
+.Seccion2 button {
+  margin-top: 20px;
+  background: #3c3c3c;
+  border: 0px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 250ms ease;
+}
+
+.Seccion2 button:hover {
+  background: #2c2c2c;
+  color: white;
+}
+
+img {
+  position: absolute;
+  bottom: 0px;
+
+  left: 0;
+  border-bottom-left-radius: 10px;
+}
+
+@keyframes BackgrounMovment {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  color: #3c3c3c;
+}
+
+@media (max-width: 875px) {
+  .Main1 {
+    width: auto;
+    min-width: 400px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    background: #202222;
+    text-align: center;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Seccion1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Barra {
+    text-align: center;
+    width: 150px;
+    margin-left: 16px;
+    display: flex;
+  }
+
+  .Seccion2 {
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer {
+    margin-top: 20px;
+    position: relative;
+  }
+  form {
+    text-align: center;
+  }
+}
+
+.Reytero {
+  width: 20px;
+}
